@@ -74,6 +74,7 @@
 		</dependencies>
 	</dependencyManagement>
 	<build>
+		<finalName>amqpservice</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

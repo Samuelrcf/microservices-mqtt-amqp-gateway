@@ -14,7 +14,7 @@ public class MQTTController {
     @GetMapping("/broker")
     public Map<String, String> getBrokerAddress() {
         Map<String, String> response = new HashMap<>();
-        response.put("brokerUrl", "tcp://broker.hivemq.com:1883");
+        response.put("brokerUrl", "tcp://localhost:1885");
         return response;
     }
 }

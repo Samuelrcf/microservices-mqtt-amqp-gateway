@@ -23,35 +23,48 @@ public class AMQPService {
 
     private static final String ARQUIVO_DADOS = "rabbitmq/dados_recebidos.txt";
 
-    private static final String BROKER_HOST = "localhost";
-    private static final int BROKER_PORT = 5672;
+    private static final String CLOUD_HOST = "rabbitmq_cloud"; 
+    private static final int CLOUD_PORT = 5672;
+
+    private static final String FOG_HOST = "rabbitmq_fog"; 
+    private static final int FOG_PORT = 5672;
 
     @PostConstruct
     public void iniciar() {
         try {
-            ConnectionFactory factory = new ConnectionFactory();
-            factory.setHost(BROKER_HOST);
-            factory.setPort(BROKER_PORT);
-            Connection connection = factory.newConnection();
-            Channel channel = connection.createChannel();
+            // 🔌 Conexão com broker cloud
+            ConnectionFactory cloudFactory = new ConnectionFactory();
+            cloudFactory.setHost(CLOUD_HOST);
+            cloudFactory.setPort(CLOUD_PORT);
+            Connection cloudConnection = cloudFactory.newConnection();
+            Channel cloudChannel = cloudConnection.createChannel();
+
+            // 🔌 Conexão com broker fog
+            ConnectionFactory fogFactory = new ConnectionFactory();
+            fogFactory.setHost(FOG_HOST);
+            fogFactory.setPort(FOG_PORT);
+            Connection fogConnection = fogFactory.newConnection();
+            Channel fogChannel = fogConnection.createChannel();
 
             String fila = "dados_processados_todos";
-            channel.queueDeclare(fila, true, false, false, null);
-            channel.basicConsume(fila, true, (consumerTag, delivery) -> {
+            cloudChannel.queueDeclare(fila, true, false, false, null);
+
+            cloudChannel.basicConsume(fila, true, (consumerTag, delivery) -> {
                 String dado = new String(delivery.getBody(), StandardCharsets.UTF_8);
                 System.out.println("Recebido [" + fila + "]: " + dado);
+
                 salvarEmArquivo(dado);
-                publicarParaCliente(channel, dado);
+                publicarParaCliente(fogChannel, dado); 
+
             }, consumerTag -> {});
 
-            System.out.println("AMQPService escutando fila: " + fila);
+            System.out.println("AMQPService escutando fila do broker CLOUD: " + fila);
 
         } catch (Exception e) {
             System.err.println("Erro ao iniciar AMQPService: " + e.getMessage());
             e.printStackTrace();
         }
     }
-
 
     private void publicarParaCliente(Channel channel, String dado) {
         try {
@@ -67,7 +80,7 @@ public class AMQPService {
             channel.basicPublish("", filaTodos, null, dado.getBytes(StandardCharsets.UTF_8));
             channel.basicPublish("", filaRegiao, null, dado.getBytes(StandardCharsets.UTF_8));
 
-            System.out.printf("Publicado em '%s' e '%s': %s%n", filaTodos, filaRegiao, dado);
+            System.out.printf("Publicado no FOG: '%s' e '%s': %s%n", filaTodos, filaRegiao, dado);
         } catch (Exception e) {
             System.err.println("Erro ao publicar para cliente: " + e.getMessage());
             e.printStackTrace();

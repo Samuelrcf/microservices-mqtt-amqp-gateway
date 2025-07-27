@@ -1,0 +1,120 @@
+version: "3.8"
+
+services:
+  eurekaserver:
+    build: ./eurekaserver
+    ports:
+      - "8761:8761"
+    networks:
+      - microsservicos
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8761"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  rabbitmq_cloud:
+    image: rabbitmq:3-management
+    ports:
+      - "5673:5672"
+      - "15673:15672"
+    networks:
+      - microsservicos
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  mosquitto_cloud:
+    image: eclipse-mosquitto
+    ports:
+      - "1884:1883"
+      - "9002:9001"
+    volumes:
+      - ./mosquitto/cloud/mosquitto.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - microsservicos
+    healthcheck:
+      test: ["CMD", "mosquitto_pub", "-h", "localhost", "-p", "1883", "-t", "health", "-m", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  apigateway:
+    build: ./apigateway
+    ports:
+      - "8080:8080"
+    depends_on:
+      eurekaserver:
+        condition: service_healthy
+      rabbitmq_cloud:
+        condition: service_healthy
+      mosquitto_cloud:
+        condition: service_healthy
+    networks:
+      - microsservicos
+
+  amqpservice:
+    build: ./amqpservice
+    ports:
+      - "8082:8082"
+    depends_on:
+      eurekaserver:
+        condition: service_healthy
+      rabbitmq_fog:
+        condition: service_healthy
+      rabbitmq_cloud:
+        condition: service_healthy
+    networks:
+      - microsservicos
+
+  mqttservice:
+    build: ./mqttservice
+    ports:
+      - "8081:8081"
+    depends_on:
+      eurekaserver:
+        condition: service_healthy
+      mosquitto_fog:
+        condition: service_healthy
+      mosquitto_cloud:
+        condition: service_healthy
+    networks:
+      - microsservicos
+
+  rabbitmq_fog:
+    image: rabbitmq:3-management
+    ports:
+      - "5674:5672"
+      - "15674:15672"
+    networks:
+      - microsservicos
+    healthcheck:
+      test: ["CMD", "rabbitmqctl", "status"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+  mosquitto_fog:
+    image: eclipse-mosquitto
+    ports:
+      - "1885:1883"
+      - "9003:9001"
+    volumes:
+      - ./mosquitto/fog/mosquitto.conf:/mosquitto/config/mosquitto.conf
+    networks:
+      - microsservicos
+    healthcheck:
+      test: ["CMD", "mosquitto_pub", "-h", "localhost", "-p", "1883", "-t", "health", "-m", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 15s
+
+networks:
+  microsservicos:

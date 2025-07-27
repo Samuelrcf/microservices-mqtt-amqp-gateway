@@ -105,7 +105,8 @@ public class GatewayService implements MqttCallback {
 
 	private void iniciarRabbitMQ() {
 		ConnectionFactory factory = new ConnectionFactory();
-		factory.setHost("localhost");
+		factory.setHost("rabbitmq_cloud");
+		factory.setPort(5672);
 		try {
 			rabbitConnection = factory.newConnection();
 			rabbitChannel = rabbitConnection.createChannel();

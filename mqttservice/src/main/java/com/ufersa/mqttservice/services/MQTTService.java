@@ -11,32 +11,40 @@ import org.eclipse.paho.client.mqttv3.MqttException;
 import org.eclipse.paho.client.mqttv3.MqttMessage;
 import org.springframework.stereotype.Service;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-
 import jakarta.annotation.PostConstruct;
 
 @Service
 public class MQTTService implements MqttCallback {
 
-    private static final String BROKER_URL = "tcp://broker.hivemq.com:1883";
+    private static final String BROKER_CLOUD = "tcp://mosquitto_cloud:1883";
+    private static final String BROKER_FOG = "tcp://mosquitto_fog:1883";
+
     private static final String TOPICO_ENTRADA = "dados_processados/todos";
 
-    private MqttClient client;
+    private MqttClient clientCloud; // Cliente para escutar do broker cloud
+    private MqttClient clientFog;   // Cliente para publicar no broker fog
 
     @PostConstruct
     public void start() {
         try {
-            client = new MqttClient(BROKER_URL, MqttClient.generateClientId());
-            MqttConnectOptions options = new MqttConnectOptions();
-            options.setAutomaticReconnect(true);
-            options.setCleanSession(true);
+            // Inicializa cliente cloud (receptor)
+            clientCloud = new MqttClient(BROKER_CLOUD, MqttClient.generateClientId());
+            MqttConnectOptions optionsCloud = new MqttConnectOptions();
+            optionsCloud.setAutomaticReconnect(true);
+            optionsCloud.setCleanSession(true);
+            clientCloud.setCallback(this);
+            clientCloud.connect(optionsCloud);
+            clientCloud.subscribe(TOPICO_ENTRADA);
+            System.out.println("Conectado ao broker CLOUD e inscrito em " + TOPICO_ENTRADA);
 
-            client.setCallback(this); 
-            client.connect(options);
+            // Inicializa cliente fog (publicador)
+            clientFog = new MqttClient(BROKER_FOG, MqttClient.generateClientId());
+            MqttConnectOptions optionsFog = new MqttConnectOptions();
+            optionsFog.setAutomaticReconnect(true);
+            optionsFog.setCleanSession(true);
+            clientFog.connect(optionsFog);
+            System.out.println("Conectado ao broker FOG para publicação");
 
-            client.subscribe(TOPICO_ENTRADA);
-
-            System.out.println("Conectado ao broker MQTT e inscrito em " + TOPICO_ENTRADA);
         } catch (MqttException e) {
             e.printStackTrace();
         }
@@ -44,43 +52,40 @@ public class MQTTService implements MqttCallback {
 
     @Override
     public void messageArrived(String topic, MqttMessage message) {
-    	String payload = new String(message.getPayload());
-    	System.out.println("Mensagem recebida em '" + topic + "': " + payload);
+        String payload = new String(message.getPayload());
+        System.out.println("Mensagem recebida de CLOUD em '" + topic + "': " + payload);
 
-    	try {
-    	    String[] partes = payload.split("]");
-    	    String regiao = partes[0].replace("[", "").trim(); // NORTE
-    	    String valoresBrutos = partes[1].replace("[", "").trim(); // "34,19 | 35,78 | 963,58 | 734,46"
+        try {
+            String[] partes = payload.split("]");
+            String regiao = partes[0].replace("[", "").trim();
+            String valoresBrutos = partes[1].replace("[", "").trim();
 
-    	    String[] valores = valoresBrutos.split("\\|");
-    	    List<Double> numeros = Arrays.stream(valores)
-    	        .map(v -> v.replace(",", ".").trim()) // converte vírgula para ponto
-    	        .map(Double::parseDouble)
-    	        .toList();
+            String[] valores = valoresBrutos.split("\\|");
+            List<Double> numeros = Arrays.stream(valores)
+                .map(v -> v.replace(",", ".").trim())
+                .map(Double::parseDouble)
+                .toList();
 
-    	    String topicoCliente = "cliente/" + regiao.toLowerCase();
-    	    String novaMensagem = "Dados da região " + regiao + ": " + numeros;
+            String topicoCliente = "cliente/" + regiao.toLowerCase();
+            String novaMensagem = "Dados da região " + regiao + ": " + numeros;
 
-    	    client.publish(topicoCliente, new MqttMessage(novaMensagem.getBytes()));
-    	    client.publish("cliente/todos", new MqttMessage(novaMensagem.getBytes()));
-    	    System.out.println("Publicado em '" + topicoCliente + "': " + novaMensagem);
+            // Publica no FOG
+            clientFog.publish(topicoCliente, new MqttMessage(novaMensagem.getBytes()));
+            clientFog.publish("cliente/todos", new MqttMessage(novaMensagem.getBytes()));
+            System.out.println("Publicado no FOG em '" + topicoCliente + "': " + novaMensagem);
 
-    	} catch (Exception e) {
-    	    System.err.println("Erro ao processar mensagem: " + e.getMessage());
-    	    e.printStackTrace();
-    	}
-
+        } catch (Exception e) {
+            System.err.println("Erro ao processar mensagem: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     @Override
     public void connectionLost(Throwable cause) {
-        System.err.println("Conexão perdida com o broker: " + cause.getMessage());
+        System.err.println("Conexão perdida com o broker CLOUD: " + cause.getMessage());
     }
 
     @Override
     public void deliveryComplete(IMqttDeliveryToken token) {
-        // Pode ser usado para confirmar publicação, se necessário
     }
 }
-
-
