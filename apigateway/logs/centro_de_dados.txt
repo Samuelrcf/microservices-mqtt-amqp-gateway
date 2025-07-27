@@ -1,0 +1,466 @@
+[2025-07-23T19:44:58.022146400] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-23T19:44:58.659097500] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-23T19:44:58.896099900] Centro conectou-se ao RabbitMQ.
+[2025-07-23T19:45:26.213962600] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-23T19:45:26.851927300] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-23T19:45:26.917694800] Centro conectou-se ao RabbitMQ.
+[2025-07-23T19:46:08.847762] Centro de dados perdeu a conexão com o broker MQTT.
+[2025-07-23T19:46:09.006257200] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-23T19:46:09.623282800] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-23T19:46:09.639525] Centro conectou-se ao RabbitMQ.
+[2025-07-23T19:46:24.111244800] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-23T20:07:17.805491100] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-23T20:07:30.648416800] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-23T20:07:30.742371800] Centro conectou-se ao RabbitMQ.
+[2025-07-23T20:09:14.411146800] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-23T20:09:15.030363500] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-23T20:09:15.094497400] Centro conectou-se ao RabbitMQ.
+[2025-07-23T20:09:44.202274700] Centro de dados perdeu a conexão com o broker MQTT.
+[2025-07-23T20:09:44.359310900] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-23T20:09:44.975661700] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-23T20:09:44.988916100] Centro conectou-se ao RabbitMQ.
+[2025-07-23T20:13:55.264762] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-23T20:13:55.879818600] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-23T20:13:55.945864500] Centro conectou-se ao RabbitMQ.
+[2025-07-23T20:14:18.188987800] Centro de dados distribuiu o dado [SUL] [15,58 | 26,31 | 957,52 | 450,31] para os usuários.
+[2025-07-23T20:14:18.190986600] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:14:18.636245100] Centro de dados distribuiu o dado [NORTE] [-0,50 | 42,67 | 1040,10 | 767,34] para os usuários.
+[2025-07-23T20:14:18.638245800] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:14:18.932394600] Centro de dados distribuiu o dado [LESTE] [38,77 | 61,47 | 1003,52 | 166,76] para os usuários.
+[2025-07-23T20:14:18.933439700] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:14:19.228128800] Centro de dados distribuiu o dado [OESTE] [26,83 | 80,67 | 1031,23 | 710,93] para os usuários.
+[2025-07-23T20:14:19.229128400] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:14:20.358361200] Centro de dados distribuiu o dado [LESTE] [-0,95 | 62,61 | 1002,88 | 256,71] para os usuários.
+[2025-07-23T20:14:20.360360700] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:14:21.349304200] Centro de dados distribuiu o dado [SUL] [13,24 | 51,47 | 991,13 | 731,47] para os usuários.
+[2025-07-23T20:14:21.350298400] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:14:21.803336300] Centro de dados distribuiu o dado [OESTE] [-1,13 | 62,94 | 1036,86 | 362,83] para os usuários.
+[2025-07-23T20:14:21.805338500] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:14:23.347500400] Centro de dados distribuiu o dado [NORTE] [23,81 | 70,72 | 961,08 | 916,96] para os usuários.
+[2025-07-23T20:14:23.347500400] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:14:23.787420800] Centro de dados distribuiu o dado [OESTE] [4,18 | 61,28 | 987,10 | 182,66] para os usuários.
+[2025-07-23T20:14:23.787420800] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:21.445327400] Centro de dados distribuiu o dado [SUL] [25,15 | 65,48 | 1026,68 | 498,67] para os usuários.
+[2025-07-23T20:15:21.446328200] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:21.592470700] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-23T20:15:21.739231100] Centro de dados distribuiu o dado [LESTE] [-0,02 | 39,15 | 974,90 | 752,24] para os usuários.
+[2025-07-23T20:15:21.741226700] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:22.199593400] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-23T20:15:22.272128] Centro conectou-se ao RabbitMQ.
+[2025-07-23T20:15:50.714469700] Centro de dados distribuiu o dado [SUL] [25,15 | 65,48 | 1026,68 | 498,67] para os usuários.
+[2025-07-23T20:15:50.715403100] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:51.347530300] Centro de dados distribuiu o dado [LESTE] [-0,02 | 39,15 | 974,90 | 752,24] para os usuários.
+[2025-07-23T20:15:51.349531700] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:52.001732900] Centro de dados distribuiu o dado [NORTE] [-4,57 | 51,93 | 1047,70 | 438,44] para os usuários.
+[2025-07-23T20:15:52.003800100] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:52.443158200] Centro de dados distribuiu o dado [LESTE] [37,16 | 11,67 | 986,13 | 680,18] para os usuários.
+[2025-07-23T20:15:52.444114] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:52.739687400] Centro de dados distribuiu o dado [OESTE] [14,82 | 66,99 | 1021,77 | 449,26] para os usuários.
+[2025-07-23T20:15:52.740649500] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:53.036126400] Centro de dados distribuiu o dado [SUL] [33,88 | 22,14 | 1009,98 | 146,93] para os usuários.
+[2025-07-23T20:15:53.039055] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:55.152670500] Centro de dados distribuiu o dado [LESTE] [-8,42 | 45,45 | 1020,35 | 961,73] para os usuários.
+[2025-07-23T20:15:55.154661200] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:55.449021200] Centro de dados distribuiu o dado [OESTE] [11,04 | 16,71 | 987,27 | 391,34] para os usuários.
+[2025-07-23T20:15:55.449021200] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:56.174498700] Centro de dados distribuiu o dado [SUL] [30,22 | 56,49 | 988,96 | 214,67] para os usuários.
+[2025-07-23T20:15:56.175555700] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:57.152579300] Centro de dados distribuiu o dado [NORTE] [31,40 | 64,32 | 1034,78 | 255,09] para os usuários.
+[2025-07-23T20:15:57.153572800] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:57.595340900] Centro de dados distribuiu o dado [LESTE] [15,58 | 13,20 | 1043,13 | 579,92] para os usuários.
+[2025-07-23T20:15:57.598336900] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:15:57.892784] Centro de dados distribuiu o dado [OESTE] [17,34 | 65,49 | 986,27 | 107,07] para os usuários.
+[2025-07-23T20:15:57.893780800] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:16:00.315151900] Centro de dados distribuiu o dado [SUL] [4,06 | 58,61 | 979,18 | 199,95] para os usuários.
+[2025-07-23T20:16:00.316154300] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:16:52.057477800] Centro de dados distribuiu o dado [LESTE] [27,04 | 61,38 | 1006,36 | 466,41] para os usuários.
+[2025-07-23T20:16:52.059477900] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:16:52.210386500] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-23T20:16:52.814988100] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-23T20:16:52.886374900] Centro conectou-se ao RabbitMQ.
+[2025-07-23T20:16:58.016481800] Centro de dados distribuiu o dado [LESTE] [27,04 | 61,38 | 1006,36 | 466,41] para os usuários.
+[2025-07-23T20:16:58.019531900] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:16:58.658299300] Centro de dados distribuiu o dado [SUL] [12,55 | 81,53 | 1016,19 | 538,38] para os usuários.
+[2025-07-23T20:16:58.661243] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:16:59.122691100] Centro de dados distribuiu o dado [NORTE] [12,05 | 60,86 | 966,14 | 804,51] para os usuários.
+[2025-07-23T20:16:59.123694] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:16:59.421934600] Centro de dados distribuiu o dado [LESTE] [12,76 | 39,36 | 1037,03 | 461,93] para os usuários.
+[2025-07-23T20:16:59.423971300] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:16:59.731554400] Centro de dados distribuiu o dado [OESTE] [-3,74 | 12,73 | 981,23 | 262,72] para os usuários.
+[2025-07-23T20:16:59.733634200] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:17:00.820761200] Centro de dados distribuiu o dado [NORTE] [-6,64 | 53,09 | 950,66 | 758,68] para os usuários.
+[2025-07-23T20:17:00.822800600] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:17:01.124717300] Centro de dados distribuiu o dado [OESTE] [22,81 | 28,00 | 1001,76 | 728,68] para os usuários.
+[2025-07-23T20:17:01.125746200] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:17:01.429289700] Centro de dados distribuiu o dado [LESTE] [30,60 | 63,03 | 1001,37 | 378,49] para os usuários.
+[2025-07-23T20:17:01.429289700] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-23T20:17:42.911324800] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-23T20:17:43.541509300] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-23T20:17:43.611176] Centro conectou-se ao RabbitMQ.
+[2025-07-23T20:18:02.612117100] Centro de dados distribuiu o dado [LESTE] [11,36 | 13,50 | 1044,13 | 390,41] para os usuários.
+[2025-07-23T20:18:02.916863200] Centro de dados distribuiu o dado [NORTE] [-1,22 | 56,73 | 997,99 | 109,57] para os usuários.
+[2025-07-23T20:18:03.373098300] Centro de dados distribuiu o dado [OESTE] [25,55 | 53,22 | 1010,44 | 377,63] para os usuários.
+[2025-07-23T20:18:03.681285200] Centro de dados distribuiu o dado [SUL] [30,56 | 26,29 | 1041,30 | 522,97] para os usuários.
+[2025-07-23T20:18:04.757531800] Centro de dados distribuiu o dado [OESTE] [-2,46 | 26,78 | 993,79 | 535,79] para os usuários.
+[2025-07-23T20:18:05.762165] Centro de dados distribuiu o dado [SUL] [33,68 | 34,33 | 982,71 | 277,97] para os usuários.
+[2025-07-26T10:27:43.083456800] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T10:27:43.909001400] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T10:27:44.084547700] Centro conectou-se ao RabbitMQ.
+[2025-07-26T10:34:21.131257700] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T10:34:21.838316600] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T10:34:21.907501700] Centro conectou-se ao RabbitMQ.
+[2025-07-26T10:37:08.443782900] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T10:37:09.184994300] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T10:37:09.289507200] Centro conectou-se ao RabbitMQ.
+[2025-07-26T10:37:38.331397900] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T10:37:46.475952500] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T10:37:46.585439200] Centro conectou-se ao RabbitMQ.
+[2025-07-26T10:41:22.546204400] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T10:41:23.282704] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T10:41:23.353737400] Centro conectou-se ao RabbitMQ.
+[2025-07-26T10:47:42.304907500] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T10:47:50.995533100] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T10:47:51.065013200] Centro conectou-se ao RabbitMQ.
+[2025-07-26T10:48:26.521689300] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T10:48:27.190630500] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T10:48:27.275023800] Centro conectou-se ao RabbitMQ.
+[2025-07-26T10:51:48.939992500] Centro de dados perdeu a conexão com o broker MQTT.
+[2025-07-26T10:53:51.700493300] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T10:53:52.428196800] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T10:53:52.496582100] Centro conectou-se ao RabbitMQ.
+[2025-07-26T10:54:58.537354] Centro de dados distribuiu o dado [LESTE] [-7,23 | 46,64 | 980,80 | 445,61] para os usuários.
+[2025-07-26T10:54:58.918119] Centro de dados distribuiu o dado [OESTE] [11,92 | 18,24 | 1004,18 | 985,53] para os usuários.
+[2025-07-26T10:54:59.532388100] Centro de dados distribuiu o dado [SUL] [-0,92 | 23,23 | 981,42 | 451,26] para os usuários.
+[2025-07-26T10:54:59.920162] Centro de dados distribuiu o dado [NORTE] [30,34 | 95,30 | 978,11 | 303,68] para os usuários.
+[2025-07-26T10:55:00.669199800] Centro de dados distribuiu o dado [SUL] [13,28 | 36,52 | 1047,89 | 800,29] para os usuários.
+[2025-07-26T10:55:01.300278400] Centro de dados distribuiu o dado [OESTE] [29,27 | 63,67 | 1008,18 | 215,34] para os usuários.
+[2025-07-26T10:55:01.691110400] Centro de dados distribuiu o dado [LESTE] [-2,88 | 53,41 | 1011,05 | 475,59] para os usuários.
+[2025-07-26T10:55:03.825964400] Centro de dados distribuiu o dado [NORTE] [-8,03 | 79,98 | 962,45 | 514,54] para os usuários.
+[2025-07-26T10:55:04.398813600] Centro de dados distribuiu o dado [LESTE] [31,50 | 47,69 | 999,53 | 246,17] para os usuários.
+[2025-07-26T10:55:05.876446400] Centro de dados distribuiu o dado [SUL] [-7,36 | 69,96 | 982,20 | 145,33] para os usuários.
+[2025-07-26T10:55:06.454264100] Centro de dados distribuiu o dado [OESTE] [8,03 | 66,70 | 997,09 | 316,46] para os usuários.
+[2025-07-26T10:55:07.941506400] Centro de dados distribuiu o dado [NORTE] [6,28 | 23,16 | 1036,09 | 706,40] para os usuários.
+[2025-07-26T10:55:09.115737400] Centro de dados distribuiu o dado [LESTE] [21,34 | 83,17 | 1022,26 | 611,80] para os usuários.
+[2025-07-26T10:55:10.107468400] Centro de dados distribuiu o dado [SUL] [22,92 | 64,80 | 1023,94 | 436,54] para os usuários.
+[2025-07-26T10:55:10.685875] Centro de dados distribuiu o dado [NORTE] [9,13 | 65,82 | 950,20 | 636,31] para os usuários.
+[2025-07-26T10:55:11.286608900] Centro de dados distribuiu o dado [OESTE] [10,62 | 40,08 | 1006,82 | 691,07] para os usuários.
+[2025-07-26T10:55:12.373894200] Centro de dados distribuiu o dado [LESTE] [6,32 | 49,55 | 954,46 | 376,72] para os usuários.
+[2025-07-26T10:55:14.482090500] Centro de dados distribuiu o dado [OESTE] [17,80 | 21,56 | 982,90 | 190,12] para os usuários.
+[2025-07-26T10:55:34.273390400] Centro de dados distribuiu o dado [LESTE] [30,84 | 59,37 | 1030,92 | 167,53] para os usuários.
+[2025-07-26T10:55:34.275318100] Erro ao enviar para o banco: Connection refused: connect
+[2025-07-26T10:55:34.625683900] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T10:55:40.706169500] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T10:55:40.788559] Centro conectou-se ao RabbitMQ.
+[2025-07-26T10:58:09.807497700] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T10:58:10.522103100] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T10:58:10.611497400] Centro conectou-se ao RabbitMQ.
+[2025-07-26T10:59:21.259601] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T10:59:28.886054900] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T10:59:28.951260100] Centro conectou-se ao RabbitMQ.
+[2025-07-26T11:05:44.632015700] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T11:05:51.123261700] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T11:05:51.188936200] Centro conectou-se ao RabbitMQ.
+[2025-07-26T11:07:49.199677100] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T11:07:54.601424500] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T11:07:54.683393200] Centro conectou-se ao RabbitMQ.
+[2025-07-26T11:10:55.618294900] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T11:11:02.272183200] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T11:11:02.335832] Centro conectou-se ao RabbitMQ.
+[2025-07-26T13:30:40.441186400] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T13:30:41.136201100] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T13:30:41.288203100] Centro conectou-se ao RabbitMQ.
+[2025-07-26T13:32:22.690256100] Centro de dados distribuiu o dado [NORTE] [27,77 | 97,28 | 994,91 | 656,07] para os usuários.
+[2025-07-26T13:32:23.280150100] Centro de dados distribuiu o dado [OESTE] [9,84 | 24,36 | 1017,45 | 631,61] para os usuários.
+[2025-07-26T13:32:23.868251600] Centro de dados distribuiu o dado [SUL] [33,36 | 11,51 | 980,57 | 669,78] para os usuários.
+[2025-07-26T13:32:25.139798400] Centro de dados distribuiu o dado [NORTE] [32,08 | 94,25 | 1037,37 | 379,10] para os usuários.
+[2025-07-26T13:32:25.746544900] Centro de dados distribuiu o dado [OESTE] [36,96 | 50,97 | 1008,56 | 799,90] para os usuários.
+[2025-07-26T13:32:28.076198900] Centro de dados distribuiu o dado [NORTE] [23,15 | 79,05 | 994,01 | 415,52] para os usuários.
+[2025-07-26T13:32:29.220379800] Centro de dados distribuiu o dado [SUL] [13,95 | 18,36 | 981,76 | 111,76] para os usuários.
+[2025-07-26T13:32:30.221526400] Centro de dados distribuiu o dado [OESTE] [23,36 | 36,52 | 970,79 | 563,01] para os usuários.
+[2025-07-26T13:32:31.415081200] Centro de dados distribuiu o dado [SUL] [14,17 | 30,91 | 1013,55 | 569,50] para os usuários.
+[2025-07-26T13:32:32.462230200] Centro de dados distribuiu o dado [OESTE] [25,93 | 75,13 | 956,91 | 248,41] para os usuários.
+[2025-07-26T13:32:33.041210] Centro de dados distribuiu o dado [LESTE] [2,31 | 72,00 | 955,23 | 559,14] para os usuários.
+[2025-07-26T13:32:33.784509100] Centro de dados distribuiu o dado [NORTE] [-2,91 | 30,25 | 955,63 | 479,18] para os usuários.
+[2025-07-26T13:32:34.912672700] Centro de dados distribuiu o dado [OESTE] [-3,12 | 88,24 | 957,44 | 745,55] para os usuários.
+[2025-07-26T13:32:35.659814800] Centro de dados distribuiu o dado [SUL] [-6,01 | 68,71 | 1010,54 | 344,51] para os usuários.
+[2025-07-26T13:32:36.967851600] Centro de dados distribuiu o dado [LESTE] [-8,32 | 67,75 | 963,99 | 413,48] para os usuários.
+[2025-07-26T13:32:37.549187900] Centro de dados distribuiu o dado [OESTE] [20,62 | 70,34 | 1017,94 | 629,10] para os usuários.
+[2025-07-26T13:32:38.001265400] Centro de dados distribuiu o dado [NORTE] [14,27 | 71,95 | 1038,22 | 161,74] para os usuários.
+[2025-07-26T13:32:38.831990400] Centro de dados distribuiu o dado [SUL] [22,84 | 74,93 | 1047,53 | 738,72] para os usuários.
+[2025-07-26T13:32:39.491929300] Centro de dados distribuiu o dado [LESTE] [9,50 | 46,71 | 973,85 | 988,72] para os usuários.
+[2025-07-26T13:32:40.079283400] Centro de dados distribuiu o dado [SUL] [17,06 | 60,42 | 1031,31 | 410,15] para os usuários.
+[2025-07-26T13:32:41.161682300] Centro de dados distribuiu o dado [OESTE] [-9,48 | 62,07 | 972,54 | 656,04] para os usuários.
+[2025-07-26T13:32:41.891267800] Centro de dados distribuiu o dado [NORTE] [-8,70 | 60,84 | 971,29 | 897,34] para os usuários.
+[2025-07-26T13:32:42.529781500] Centro de dados distribuiu o dado [SUL] [34,55 | 21,09 | 1038,58 | 600,86] para os usuários.
+[2025-07-26T13:48:35.711088900] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T13:48:43.544064700] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T13:48:43.607550500] Centro conectou-se ao RabbitMQ.
+[2025-07-26T13:49:42.648008700] Centro de dados distribuiu o dado [LESTE] [14,63 | 13,28 | 981,81 | 289,38] para os usuários.
+[2025-07-26T13:49:43.346811] Centro de dados distribuiu o dado [SUL] [3,50 | 91,92 | 1008,79 | 541,74] para os usuários.
+[2025-07-26T13:49:43.741599800] Centro de dados distribuiu o dado [NORTE] [33,49 | 12,32 | 1039,56 | 495,71] para os usuários.
+[2025-07-26T13:49:44.369538800] Centro de dados distribuiu o dado [OESTE] [10,29 | 70,72 | 956,80 | 105,36] para os usuários.
+[2025-07-26T13:49:44.961504600] Centro de dados distribuiu o dado [OESTE] [-4,38 | 50,09 | 1035,45 | 266,20] para os usuários.
+[2025-07-26T13:49:46.132151600] Centro de dados distribuiu o dado [NORTE] [-1,01 | 34,69 | 1013,82 | 509,60] para os usuários.
+[2025-07-26T13:49:46.849504900] Centro de dados distribuiu o dado [SUL] [3,05 | 46,71 | 972,46 | 441,87] para os usuários.
+[2025-07-26T13:49:47.450487900] Centro de dados distribuiu o dado [OESTE] [11,92 | 35,71 | 967,11 | 828,49] para os usuários.
+[2025-07-26T13:49:48.068774400] Centro de dados distribuiu o dado [LESTE] [-7,00 | 10,44 | 1005,41 | 987,01] para os usuários.
+[2025-07-26T13:49:48.659185600] Centro de dados distribuiu o dado [NORTE] [7,53 | 55,60 | 965,28 | 915,56] para os usuários.
+[2025-07-26T13:49:50.575272700] Centro de dados distribuiu o dado [SUL] [13,13 | 40,22 | 1049,74 | 818,33] para os usuários.
+[2025-07-26T13:49:51.441065] Centro de dados distribuiu o dado [OESTE] [-5,53 | 53,74 | 971,17 | 175,55] para os usuários.
+[2025-07-26T13:49:52.266461600] Centro de dados distribuiu o dado [NORTE] [8,53 | 26,19 | 987,05 | 325,05] para os usuários.
+[2025-07-26T13:49:53.094849900] Centro de dados distribuiu o dado [LESTE] [13,88 | 97,75 | 990,16 | 414,23] para os usuários.
+[2025-07-26T13:49:55.273579500] Centro de dados distribuiu o dado [LESTE] [10,25 | 79,80 | 1010,64 | 118,43] para os usuários.
+[2025-07-26T13:49:55.898253] Centro de dados distribuiu o dado [SUL] [19,22 | 98,85 | 1009,18 | 636,38] para os usuários.
+[2025-07-26T13:49:56.290470200] Centro de dados distribuiu o dado [NORTE] [31,98 | 21,01 | 975,95 | 221,61] para os usuários.
+[2025-07-26T13:49:56.982366300] Centro de dados distribuiu o dado [OESTE] [27,54 | 87,21 | 1040,66 | 548,85] para os usuários.
+[2025-07-26T13:49:57.629348300] Centro de dados distribuiu o dado [LESTE] [-8,63 | 78,57 | 985,69 | 486,81] para os usuários.
+[2025-07-26T13:49:58.667140200] Centro de dados distribuiu o dado [NORTE] [38,92 | 31,61 | 1032,04 | 800,58] para os usuários.
+[2025-07-26T13:50:00.676009700] Centro de dados distribuiu o dado [SUL] [-3,89 | 45,96 | 999,03 | 948,82] para os usuários.
+[2025-07-26T13:50:01.295654600] Centro de dados distribuiu o dado [OESTE] [12,98 | 89,93 | 992,79 | 224,70] para os usuários.
+[2025-07-26T13:50:01.922663900] Centro de dados distribuiu o dado [LESTE] [25,42 | 84,15 | 1020,96 | 528,45] para os usuários.
+[2025-07-26T13:50:02.316923] Centro de dados distribuiu o dado [NORTE] [24,16 | 79,58 | 976,57 | 228,13] para os usuários.
+[2025-07-26T13:50:02.942590100] Centro de dados distribuiu o dado [SUL] [23,97 | 98,80 | 991,82 | 866,46] para os usuários.
+[2025-07-26T13:50:05.055888600] Centro de dados distribuiu o dado [LESTE] [19,40 | 61,85 | 996,69 | 235,80] para os usuários.
+[2025-07-26T13:50:06.038829600] Centro de dados distribuiu o dado [OESTE] [35,38 | 98,42 | 1030,75 | 222,35] para os usuários.
+[2025-07-26T13:50:06.755861100] Centro de dados distribuiu o dado [NORTE] [37,21 | 75,82 | 1033,07 | 767,68] para os usuários.
+[2025-07-26T13:50:07.338946] Centro de dados distribuiu o dado [LESTE] [-9,04 | 15,29 | 984,79 | 657,45] para os usuários.
+[2025-07-26T13:50:08.105976700] Centro de dados distribuiu o dado [SUL] [15,13 | 54,43 | 1024,67 | 250,99] para os usuários.
+[2025-07-26T13:50:10.522527800] Centro de dados distribuiu o dado [NORTE] [10,33 | 44,23 | 1038,04 | 108,76] para os usuários.
+[2025-07-26T13:50:11.222486600] Centro de dados distribuiu o dado [LESTE] [10,13 | 17,31 | 950,35 | 257,37] para os usuários.
+[2025-07-26T13:50:11.839556100] Centro de dados distribuiu o dado [OESTE] [35,21 | 96,37 | 1010,31 | 340,12] para os usuários.
+[2025-07-26T13:50:12.422148800] Centro de dados distribuiu o dado [SUL] [-2,21 | 84,09 | 987,75 | 348,28] para os usuários.
+[2025-07-26T13:50:13.772094600] Centro de dados distribuiu o dado [NORTE] [-7,83 | 55,08 | 953,34 | 809,76] para os usuários.
+[2025-07-26T13:50:14.355855200] Centro de dados distribuiu o dado [LESTE] [12,51 | 35,16 | 1014,86 | 502,61] para os usuários.
+[2025-07-26T13:50:15.538822200] Centro de dados distribuiu o dado [SUL] [19,78 | 51,92 | 1037,30 | 408,85] para os usuários.
+[2025-07-26T13:50:18.330963400] Centro de dados distribuiu o dado [OESTE] [33,78 | 30,78 | 1040,00 | 661,98] para os usuários.
+[2025-07-26T13:50:18.926110300] Centro de dados distribuiu o dado [NORTE] [-9,80 | 63,46 | 1017,08 | 432,00] para os usuários.
+[2025-07-26T13:50:19.322490900] Centro de dados distribuiu o dado [SUL] [21,35 | 57,55 | 962,76 | 719,22] para os usuários.
+[2025-07-26T13:50:19.922519300] Centro de dados distribuiu o dado [LESTE] [35,60 | 61,20 | 969,15 | 275,45] para os usuários.
+[2025-07-26T13:50:20.905575700] Centro de dados distribuiu o dado [OESTE] [11,22 | 61,60 | 963,08 | 615,84] para os usuários.
+[2025-07-26T13:50:22.288652200] Centro de dados distribuiu o dado [NORTE] [3,82 | 92,92 | 953,70 | 194,79] para os usuários.
+[2025-07-26T13:50:22.888714500] Centro de dados distribuiu o dado [LESTE] [-2,40 | 76,35 | 953,22 | 676,60] para os usuários.
+[2025-07-26T13:50:23.272501400] Centro de dados distribuiu o dado [SUL] [-5,23 | 90,02 | 956,65 | 740,26] para os usuários.
+[2025-07-26T13:50:23.889260600] Centro de dados distribuiu o dado [OESTE] [19,85 | 88,92 | 997,26 | 818,67] para os usuários.
+[2025-07-26T13:50:25.821970800] Centro de dados distribuiu o dado [LESTE] [27,87 | 23,49 | 957,14 | 847,97] para os usuários.
+[2025-07-26T13:50:26.438685200] Centro de dados distribuiu o dado [OESTE] [-6,61 | 52,12 | 985,38 | 698,27] para os usuários.
+[2025-07-26T13:50:27.955291700] Centro de dados distribuiu o dado [SUL] [3,90 | 97,88 | 1022,71 | 938,47] para os usuários.
+[2025-07-26T13:50:28.572255300] Centro de dados distribuiu o dado [NORTE] [35,97 | 37,64 | 1045,46 | 636,97] para os usuários.
+[2025-07-26T13:50:28.977653100] Centro de dados distribuiu o dado [OESTE] [29,48 | 30,34 | 1018,98 | 798,69] para os usuários.
+[2025-07-26T13:50:30.188624700] Centro de dados distribuiu o dado [SUL] [6,62 | 67,81 | 1030,93 | 675,93] para os usuários.
+[2025-07-26T13:50:30.838647100] Centro de dados distribuiu o dado [NORTE] [4,02 | 49,00 | 1002,23 | 708,39] para os usuários.
+[2025-07-26T13:50:31.605516500] Centro de dados distribuiu o dado [LESTE] [-3,36 | 43,86 | 971,63 | 736,46] para os usuários.
+[2025-07-26T13:50:33.555356800] Centro de dados distribuiu o dado [OESTE] [25,21 | 17,29 | 1035,66 | 922,98] para os usuários.
+[2025-07-26T13:50:34.388482500] Centro de dados distribuiu o dado [SUL] [33,92 | 71,37 | 989,70 | 108,31] para os usuários.
+[2025-07-26T13:50:35.039287900] Centro de dados distribuiu o dado [NORTE] [10,78 | 20,26 | 974,55 | 186,20] para os usuários.
+[2025-07-26T13:50:35.705962900] Centro de dados distribuiu o dado [LESTE] [23,16 | 56,10 | 969,13 | 315,51] para os usuários.
+[2025-07-26T13:50:37.705500500] Centro de dados distribuiu o dado [OESTE] [-8,46 | 14,13 | 955,59 | 885,64] para os usuários.
+[2025-07-26T13:50:38.605336100] Centro de dados distribuiu o dado [NORTE] [33,25 | 20,92 | 960,13 | 409,24] para os usuários.
+[2025-07-26T13:50:39.255283400] Centro de dados distribuiu o dado [LESTE] [-8,31 | 67,09 | 1017,93 | 649,24] para os usuários.
+[2025-07-26T13:50:39.922051300] Centro de dados distribuiu o dado [SUL] [33,52 | 54,93 | 992,48 | 697,71] para os usuários.
+[2025-07-26T13:50:40.622106] Centro de dados distribuiu o dado [LESTE] [17,45 | 92,57 | 1038,09 | 315,50] para os usuários.
+[2025-07-26T13:50:42.929758800] Centro de dados distribuiu o dado [SUL] [27,98 | 35,24 | 1021,90 | 136,53] para os usuários.
+[2025-07-26T13:50:43.655212100] Centro de dados distribuiu o dado [OESTE] [4,17 | 10,81 | 973,60 | 977,52] para os usuários.
+[2025-07-26T13:50:44.105297700] Centro de dados distribuiu o dado [NORTE] [-5,25 | 21,58 | 1033,09 | 676,01] para os usuários.
+[2025-07-26T13:50:44.705173300] Centro de dados distribuiu o dado [LESTE] [33,29 | 74,86 | 1040,31 | 298,83] para os usuários.
+[2025-07-26T13:50:46.439387100] Centro de dados distribuiu o dado [NORTE] [12,93 | 60,48 | 986,84 | 561,41] para os usuários.
+[2025-07-26T13:50:47.071841] Centro de dados distribuiu o dado [LESTE] [24,10 | 39,55 | 960,75 | 436,82] para os usuários.
+[2025-07-26T13:50:47.671781900] Centro de dados distribuiu o dado [SUL] [-1,17 | 74,43 | 998,81 | 969,78] para os usuários.
+[2025-07-26T13:50:48.438220500] Centro de dados distribuiu o dado [OESTE] [12,90 | 59,93 | 971,31 | 666,33] para os usuários.
+[2025-07-26T13:50:50.305332400] Centro de dados distribuiu o dado [LESTE] [32,37 | 70,57 | 957,59 | 800,79] para os usuários.
+[2025-07-26T13:50:51.505435600] Centro de dados distribuiu o dado [OESTE] [23,64 | 27,19 | 1021,31 | 946,71] para os usuários.
+[2025-07-26T13:50:53.878243300] Centro de dados distribuiu o dado [NORTE] [13,19 | 53,57 | 1004,63 | 694,45] para os usuários.
+[2025-07-26T13:50:54.505663800] Centro de dados distribuiu o dado [SUL] [16,80 | 29,94 | 982,25 | 323,22] para os usuários.
+[2025-07-26T13:50:54.905044800] Centro de dados distribuiu o dado [LESTE] [9,50 | 31,82 | 983,52 | 593,63] para os usuários.
+[2025-07-26T13:50:55.505224600] Centro de dados distribuiu o dado [LESTE] [12,97 | 13,03 | 997,32 | 653,54] para os usuários.
+[2025-07-26T13:50:55.888725800] Centro de dados distribuiu o dado [SUL] [39,94 | 14,41 | 1018,94 | 567,05] para os usuários.
+[2025-07-26T13:50:56.488785700] Centro de dados distribuiu o dado [NORTE] [13,57 | 25,35 | 956,27 | 624,51] para os usuários.
+[2025-07-26T13:50:57.371691600] Centro de dados distribuiu o dado [OESTE] [27,69 | 54,36 | 1032,59 | 212,15] para os usuários.
+[2025-07-26T13:50:58.121727700] Centro de dados distribuiu o dado [LESTE] [9,86 | 65,84 | 1037,07 | 386,07] para os usuários.
+[2025-07-26T13:50:59.705132200] Centro de dados distribuiu o dado [SUL] [14,87 | 43,76 | 1040,15 | 254,50] para os usuários.
+[2025-07-26T13:51:01.171930600] Centro de dados distribuiu o dado [NORTE] [36,55 | 89,55 | 1011,61 | 346,73] para os usuários.
+[2025-07-26T13:51:01.755677] Centro de dados distribuiu o dado [LESTE] [35,45 | 66,05 | 1044,43 | 551,50] para os usuários.
+[2025-07-26T13:51:02.171866200] Centro de dados distribuiu o dado [OESTE] [35,76 | 24,48 | 1037,31 | 925,70] para os usuários.
+[2025-07-26T13:51:02.904909200] Centro de dados distribuiu o dado [SUL] [-7,42 | 70,84 | 1029,40 | 651,14] para os usuários.
+[2025-07-26T13:51:03.671490200] Centro de dados distribuiu o dado [NORTE] [17,34 | 13,75 | 952,97 | 478,02] para os usuários.
+[2025-07-26T13:51:04.504989600] Centro de dados distribuiu o dado [LESTE] [5,55 | 50,88 | 974,87 | 517,18] para os usuários.
+[2025-07-26T13:51:05.921819100] Centro de dados distribuiu o dado [OESTE] [16,50 | 97,11 | 1044,91 | 122,95] para os usuários.
+[2025-07-26T13:51:06.888460400] Centro de dados distribuiu o dado [LESTE] [15,15 | 59,74 | 959,91 | 223,39] para os usuários.
+[2025-07-26T13:51:07.538181300] Centro de dados distribuiu o dado [SUL] [-4,75 | 23,32 | 951,59 | 268,88] para os usuários.
+[2025-07-26T13:51:08.155053700] Centro de dados distribuiu o dado [NORTE] [2,12 | 93,53 | 1038,31 | 755,14] para os usuários.
+[2025-07-26T13:51:09.556095200] Centro de dados distribuiu o dado [SUL] [27,66 | 46,42 | 1012,48 | 787,74] para os usuários.
+[2025-07-26T13:51:10.238531700] Centro de dados distribuiu o dado [LESTE] [-1,55 | 71,25 | 959,93 | 709,45] para os usuários.
+[2025-07-26T13:51:10.638309400] Centro de dados distribuiu o dado [OESTE] [28,83 | 72,98 | 1045,70 | 968,90] para os usuários.
+[2025-07-26T13:51:11.771772100] Centro de dados distribuiu o dado [NORTE] [-5,62 | 73,40 | 958,45 | 496,92] para os usuários.
+[2025-07-26T14:03:31.374531100] Centro de dados distribuiu o dado [NORTE] [11,74 | 35,14 | 1032,89 | 430,38] para os usuários.
+[2025-07-26T14:03:32.013700300] Centro de dados distribuiu o dado [OESTE] [4,07 | 39,30 | 955,80 | 632,21] para os usuários.
+[2025-07-26T14:03:32.516361500] Centro de dados distribuiu o dado [LESTE] [25,39 | 51,75 | 991,93 | 714,63] para os usuários.
+[2025-07-26T14:03:32.967082100] Centro de dados distribuiu o dado [SUL] [4,25 | 49,92 | 1032,01 | 463,39] para os usuários.
+[2025-07-26T14:03:33.754669500] Centro de dados distribuiu o dado [SUL] [13,81 | 69,17 | 1022,56 | 237,93] para os usuários.
+[2025-07-26T14:03:35.603030200] Centro de dados distribuiu o dado [NORTE] [-7,86 | 71,07 | 998,68 | 290,79] para os usuários.
+[2025-07-26T14:03:36.287247400] Centro de dados distribuiu o dado [LESTE] [-1,60 | 77,80 | 1030,36 | 638,62] para os usuários.
+[2025-07-26T17:16:20.908184200] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T17:16:21.619444600] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T17:16:21.830960300] Centro conectou-se ao RabbitMQ.
+[2025-07-26T17:33:35.556328400] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T17:33:36.272285600] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T17:33:36.364427200] Centro conectou-se ao RabbitMQ.
+[2025-07-26T18:07:06.334400600] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T18:07:07.024623300] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T18:07:07.117195400] Centro conectou-se ao RabbitMQ.
+[2025-07-26T18:07:23.998295100] Centro de dados distribuiu o dado [SUL] [-5,02 | 96,68 | 1005,05 | 416,98] para os usuários.
+[2025-07-26T18:07:24.572771900] Centro de dados distribuiu o dado [NORTE] [-6,01 | 83,16 | 960,03 | 360,80] para os usuários.
+[2025-07-26T18:07:24.970571700] Centro de dados distribuiu o dado [OESTE] [36,94 | 26,74 | 969,18 | 314,12] para os usuários.
+[2025-07-26T18:07:25.369736500] Centro de dados distribuiu o dado [LESTE] [-6,41 | 40,59 | 988,89 | 812,83] para os usuários.
+[2025-07-26T18:07:26.207821500] Centro de dados distribuiu o dado [LESTE] [39,53 | 72,10 | 958,10 | 737,42] para os usuários.
+[2025-07-26T18:07:26.790038600] Centro de dados distribuiu o dado [NORTE] [27,68 | 13,05 | 1024,97 | 978,87] para os usuários.
+[2025-07-26T18:07:29.205350600] Centro de dados distribuiu o dado [SUL] [21,16 | 34,53 | 988,11 | 238,54] para os usuários.
+[2025-07-26T18:07:29.840063700] Centro de dados distribuiu o dado [OESTE] [32,42 | 92,74 | 1007,80 | 601,20] para os usuários.
+[2025-07-26T18:07:31.395701100] Centro de dados distribuiu o dado [NORTE] [8,27 | 98,12 | 1003,26 | 155,09] para os usuários.
+[2025-07-26T18:07:31.974424300] Centro de dados distribuiu o dado [LESTE] [-5,13 | 21,51 | 1034,33 | 379,59] para os usuários.
+[2025-07-26T18:07:34.398558900] Centro de dados distribuiu o dado [SUL] [34,91 | 13,23 | 959,22 | 920,12] para os usuários.
+[2025-07-26T18:07:34.987937] Centro de dados distribuiu o dado [OESTE] [19,88 | 85,61 | 952,39 | 617,52] para os usuários.
+[2025-07-26T18:09:13.456161] Centro de dados distribuiu o dado [NORTE] [34,19 | 35,78 | 963,58 | 734,46] para os usuários.
+[2025-07-26T18:09:13.847211200] Centro de dados distribuiu o dado [LESTE] [35,64 | 74,71 | 999,45 | 510,13] para os usuários.
+[2025-07-26T18:09:14.236349700] Centro de dados distribuiu o dado [OESTE] [32,67 | 49,26 | 1047,93 | 291,14] para os usuários.
+[2025-07-26T18:09:14.809567200] Centro de dados distribuiu o dado [SUL] [-4,71 | 92,96 | 1020,49 | 701,35] para os usuários.
+[2025-07-26T18:09:15.656891] Centro de dados distribuiu o dado [SUL] [23,42 | 70,97 | 1022,43 | 309,60] para os usuários.
+[2025-07-26T18:09:16.656935500] Centro de dados distribuiu o dado [NORTE] [9,24 | 93,42 | 1045,94 | 968,59] para os usuários.
+[2025-07-26T18:09:17.649871800] Centro de dados distribuiu o dado [OESTE] [-0,67 | 33,96 | 979,69 | 114,61] para os usuários.
+[2025-07-26T18:11:03.194024900] Centro de dados distribuiu o dado [OESTE] [-0,67 | 33,96 | 979,69 | 114,61] para os usuários.
+[2025-07-26T18:11:03.773888200] Centro de dados distribuiu o dado [SUL] [-1,87 | 62,69 | 954,32 | 981,67] para os usuários.
+[2025-07-26T18:11:04.170635900] Centro de dados distribuiu o dado [NORTE] [4,83 | 20,16 | 994,16 | 736,29] para os usuários.
+[2025-07-26T18:11:04.559387600] Centro de dados distribuiu o dado [LESTE] [-0,64 | 25,69 | 999,43 | 653,12] para os usuários.
+[2025-07-26T18:11:04.955903900] Centro de dados distribuiu o dado [OESTE] [5,36 | 42,46 | 1017,10 | 783,91] para os usuários.
+[2025-07-26T18:11:05.578268800] Centro de dados distribuiu o dado [OESTE] [36,48 | 50,40 | 1007,82 | 164,63] para os usuários.
+[2025-07-26T18:11:06.436621700] Centro de dados distribuiu o dado [NORTE] [13,88 | 49,42 | 1019,86 | 890,74] para os usuários.
+[2025-07-26T18:11:07.012756100] Centro de dados distribuiu o dado [LESTE] [18,90 | 62,94 | 986,00 | 298,09] para os usuários.
+[2025-07-26T18:12:29.685742100] Centro de dados distribuiu o dado [OESTE] [-3,63 | 45,44 | 954,89 | 395,38] para os usuários.
+[2025-07-26T18:12:30.267905400] Centro de dados distribuiu o dado [LESTE] [26,32 | 10,55 | 956,97 | 448,72] para os usuários.
+[2025-07-26T18:12:30.656050100] Centro de dados distribuiu o dado [NORTE] [9,03 | 61,74 | 969,16 | 939,33] para os usuários.
+[2025-07-26T18:12:31.043451300] Centro de dados distribuiu o dado [SUL] [39,80 | 87,03 | 1026,50 | 970,71] para os usuários.
+[2025-07-26T18:12:32.891037400] Centro de dados distribuiu o dado [OESTE] [26,51 | 81,50 | 986,07 | 867,40] para os usuários.
+[2025-07-26T18:15:01.785899700] Centro de dados distribuiu o dado [NORTE] [6,02 | 82,43 | 967,10 | 155,58] para os usuários.
+[2025-07-26T18:15:02.510713800] Centro de dados distribuiu o dado [OESTE] [-5,74 | 51,43 | 981,84 | 435,48] para os usuários.
+[2025-07-26T18:15:02.905825700] Centro de dados distribuiu o dado [SUL] [17,48 | 21,73 | 1043,17 | 185,55] para os usuários.
+[2025-07-26T18:15:03.291976400] Centro de dados distribuiu o dado [LESTE] [13,35 | 30,76 | 1033,05 | 679,03] para os usuários.
+[2025-07-26T18:15:04.022682] Centro de dados distribuiu o dado [LESTE] [8,86 | 35,24 | 1018,73 | 151,03] para os usuários.
+[2025-07-26T18:15:06.041138900] Centro de dados distribuiu o dado [OESTE] [-8,85 | 69,20 | 993,34 | 642,41] para os usuários.
+[2025-07-26T18:15:07.000937800] Centro de dados distribuiu o dado [NORTE] [37,75 | 62,45 | 1023,76 | 924,05] para os usuários.
+[2025-07-26T18:15:07.575680300] Centro de dados distribuiu o dado [SUL] [33,79 | 79,57 | 1003,56 | 160,76] para os usuários.
+[2025-07-26T18:15:08.186510800] Centro de dados distribuiu o dado [OESTE] [5,02 | 39,15 | 1047,64 | 930,11] para os usuários.
+[2025-07-26T18:15:08.761040700] Centro de dados distribuiu o dado [LESTE] [-1,71 | 39,54 | 981,25 | 841,02] para os usuários.
+[2025-07-26T20:38:12.273457300] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T20:38:14.832470] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T20:38:14.908096100] Erro ao conectar ao RabbitMQ: null
+[2025-07-26T20:42:17.003891300] Centro de dados distribuiu o dado [LESTE] [-1,71 | 39,54 | 981,25 | 841,02] para os usuários.
+[2025-07-26T20:42:17.597890700] Centro de dados distribuiu o dado [OESTE] [5,02 | 39,15 | 1047,64 | 930,11] para os usuários.
+[2025-07-26T20:42:17.990309] Centro de dados distribuiu o dado [NORTE] [6,07 | 48,19 | 966,86 | 404,59] para os usuários.
+[2025-07-26T20:42:18.548167900] Centro de dados distribuiu o dado [LESTE] [-5,93 | 56,24 | 977,78 | 251,89] para os usuários.
+[2025-07-26T20:42:18.936362600] Centro de dados distribuiu o dado [SUL] [20,22 | 83,31 | 951,43 | 197,89] para os usuários.
+[2025-07-26T20:42:19.322264400] Centro de dados distribuiu o dado [OESTE] [36,13 | 34,58 | 1028,49 | 208,84] para os usuários.
+[2025-07-26T20:42:20.612294200] Centro de dados distribuiu o dado [SUL] [34,95 | 48,73 | 1002,43 | 235,53] para os usuários.
+[2025-07-26T20:42:21.636245100] Centro de dados distribuiu o dado [NORTE] [-1,47 | 74,86 | 971,65 | 439,98] para os usuários.
+[2025-07-26T20:42:22.203605200] Centro de dados distribuiu o dado [OESTE] [35,10 | 69,15 | 1003,78 | 939,77] para os usuários.
+[2025-07-26T20:42:22.777427800] Centro de dados distribuiu o dado [LESTE] [25,60 | 88,34 | 1009,82 | 542,19] para os usuários.
+[2025-07-26T20:42:23.806429300] Centro de dados distribuiu o dado [SUL] [18,57 | 97,42 | 1023,25 | 901,70] para os usuários.
+[2025-07-26T20:42:24.884923200] Centro de dados distribuiu o dado [LESTE] [32,71 | 18,81 | 1026,57 | 284,95] para os usuários.
+[2025-07-26T20:42:25.953052600] Centro de dados distribuiu o dado [OESTE] [6,59 | 88,83 | 1038,63 | 531,18] para os usuários.
+[2025-07-26T20:42:26.816156400] Centro de dados distribuiu o dado [NORTE] [39,43 | 20,32 | 974,66 | 971,74] para os usuários.
+[2025-07-26T20:42:29.085751600] Centro de dados distribuiu o dado [SUL] [22,30 | 99,58 | 1029,34 | 951,45] para os usuários.
+[2025-07-26T20:42:30.062780900] Centro de dados distribuiu o dado [NORTE] [36,24 | 34,02 | 991,64 | 538,74] para os usuários.
+[2025-07-26T20:42:30.629964900] Centro de dados distribuiu o dado [LESTE] [34,90 | 18,11 | 1002,46 | 748,30] para os usuários.
+[2025-07-26T20:42:31.193995400] Centro de dados distribuiu o dado [OESTE] [-4,99 | 17,78 | 1045,53 | 590,21] para os usuários.
+[2025-07-26T20:42:32.376528400] Centro de dados distribuiu o dado [NORTE] [7,71 | 81,18 | 950,68 | 965,09] para os usuários.
+[2025-07-26T20:47:37.921324600] Centro de dados distribuiu o dado [LESTE] [20,56 | 73,38 | 984,63 | 654,57] para os usuários.
+[2025-07-26T20:47:38.304067600] Centro de dados distribuiu o dado [OESTE] [29,03 | 32,96 | 1049,26 | 771,99] para os usuários.
+[2025-07-26T20:47:38.684101200] Centro de dados distribuiu o dado [NORTE] [1,96 | 59,13 | 958,08 | 575,06] para os usuários.
+[2025-07-26T20:47:39.252344200] Centro de dados distribuiu o dado [SUL] [15,74 | 83,09 | 981,80 | 485,64] para os usuários.
+[2025-07-26T20:47:40.119518100] Centro de dados distribuiu o dado [OESTE] [24,55 | 75,05 | 1025,74 | 515,69] para os usuários.
+[2025-07-26T20:47:40.510735200] Centro de dados distribuiu o dado [LESTE] [23,94 | 37,79 | 1030,27 | 570,42] para os usuários.
+[2025-07-26T20:47:42.120084] Centro de dados distribuiu o dado [NORTE] [2,32 | 43,70 | 964,55 | 595,52] para os usuários.
+[2025-07-26T20:47:42.682123400] Centro de dados distribuiu o dado [OESTE] [37,43 | 34,00 | 1006,99 | 639,01] para os usuários.
+[2025-07-26T20:47:43.059348400] Centro de dados distribuiu o dado [LESTE] [12,86 | 14,19 | 966,74 | 286,74] para os usuários.
+[2025-07-26T20:47:43.636319400] Centro de dados distribuiu o dado [SUL] [34,48 | 41,66 | 977,92 | 360,45] para os usuários.
+[2025-07-26T20:49:34.318854800] O Gateway perdeu a conexão com o broker MQTT.
+[2025-07-26T20:49:34.544653100] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T20:49:35.262043500] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T20:49:35.286320300] Erro ao conectar ao RabbitMQ: null
+[2025-07-26T20:51:38.626383800] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T20:51:39.340048400] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T20:51:39.422482200] Erro ao conectar ao RabbitMQ: null
+[2025-07-26T20:55:09.351618600] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T20:55:10.051418800] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T20:55:10.141626] Erro ao conectar ao RabbitMQ: null
+[2025-07-26T20:57:09.978459500] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T20:57:10.688803500] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T20:57:10.770586800] Erro ao conectar ao RabbitMQ: null
+[2025-07-26T21:00:17.464810300] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T21:00:32.098633200] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T21:00:32.169007] Erro ao conectar ao RabbitMQ: null
+[2025-07-26T21:01:40.679347600] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T21:01:55.461476100] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T21:01:55.535598700] Centro conectou-se ao RabbitMQ.
+[2025-07-26T21:03:34.003207100] Centro de dados distribuiu o dado [OESTE] [35,52 | 81,97 | 1016,39 | 261,43] para os usuários.
+[2025-07-26T21:03:34.381761700] Centro de dados distribuiu o dado [SUL] [15,71 | 68,66 | 1007,98 | 156,08] para os usuários.
+[2025-07-26T21:03:34.754750100] Centro de dados distribuiu o dado [LESTE] [31,32 | 59,17 | 982,55 | 245,58] para os usuários.
+[2025-07-26T21:03:35.432703100] Centro de dados distribuiu o dado [NORTE] [7,68 | 96,28 | 1023,66 | 920,17] para os usuários.
+[2025-07-26T21:03:37.188071200] Centro de dados distribuiu o dado [SUL] [-1,12 | 18,95 | 1002,09 | 906,97] para os usuários.
+[2025-07-26T21:06:33.877077200] Centro de dados distribuiu o dado [OESTE] [25,26 | 83,20 | 976,14 | 550,38] para os usuários.
+[2025-07-26T21:06:34.436448100] Centro de dados distribuiu o dado [SUL] [3,17 | 45,82 | 1020,30 | 728,83] para os usuários.
+[2025-07-26T21:06:34.916149100] Centro de dados distribuiu o dado [NORTE] [3,42 | 16,03 | 1018,65 | 535,81] para os usuários.
+[2025-07-26T21:06:35.295112600] Centro de dados distribuiu o dado [LESTE] [22,17 | 60,86 | 1041,20 | 672,17] para os usuários.
+[2025-07-26T21:06:37.087497500] Centro de dados distribuiu o dado [OESTE] [4,40 | 73,80 | 969,66 | 184,44] para os usuários.
+[2025-07-26T21:06:38.075163100] Centro de dados distribuiu o dado [NORTE] [17,82 | 95,91 | 978,48 | 271,59] para os usuários.
+[2025-07-26T21:06:38.626634300] Centro de dados distribuiu o dado [SUL] [24,75 | 54,24 | 986,23 | 187,90] para os usuários.
+[2025-07-26T21:06:39.282220200] Centro de dados distribuiu o dado [LESTE] [8,78 | 63,28 | 981,46 | 380,59] para os usuários.
+[2025-07-26T21:06:40.296392300] Centro de dados distribuiu o dado [NORTE] [21,86 | 31,63 | 1044,64 | 691,27] para os usuários.
+[2025-07-26T21:06:40.848297] Centro de dados distribuiu o dado [OESTE] [-5,92 | 63,83 | 968,13 | 898,59] para os usuários.
+[2025-07-26T21:06:41.420373] Centro de dados distribuiu o dado [SUL] [19,11 | 32,49 | 986,36 | 866,15] para os usuários.
+[2025-07-26T21:09:17.376356500] Centro de dados distribuiu o dado [SUL] [3,93 | 82,64 | 1023,29 | 468,17] para os usuários.
+[2025-07-26T21:09:18.169904500] Centro de dados distribuiu o dado [OESTE] [29,51 | 37,39 | 1024,68 | 135,24] para os usuários.
+[2025-07-26T21:09:18.549586400] Centro de dados distribuiu o dado [NORTE] [13,88 | 94,62 | 1033,50 | 781,42] para os usuários.
+[2025-07-26T21:09:18.918583400] Centro de dados distribuiu o dado [LESTE] [8,68 | 31,30 | 971,49 | 676,32] para os usuários.
+[2025-07-26T21:09:20.553535300] Centro de dados distribuiu o dado [SUL] [15,07 | 22,09 | 951,72 | 410,58] para os usuários.
+[2025-07-26T21:09:21.557800800] Centro de dados distribuiu o dado [NORTE] [18,10 | 57,11 | 1047,23 | 205,22] para os usuários.
+[2025-07-26T21:09:22.610774900] Centro de dados distribuiu o dado [OESTE] [10,30 | 83,74 | 1036,59 | 830,22] para os usuários.
+[2025-07-26T21:09:22.996888900] Centro de dados distribuiu o dado [LESTE] [28,18 | 97,56 | 980,72 | 848,46] para os usuários.
+[2025-07-26T21:09:23.727174100] Centro de dados distribuiu o dado [SUL] [-1,87 | 62,14 | 953,83 | 117,72] para os usuários.
+[2025-07-26T21:12:35.793351400] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T21:12:49.011256500] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T21:12:49.073355300] Centro conectou-se ao RabbitMQ.
+[2025-07-26T21:19:23.328628300] Centro de dados distribuiu o dado [NORTE] [26,62 | 50,30 | 991,11 | 147,82] para os usuários.
+[2025-07-26T21:19:23.701906100] Centro de dados distribuiu o dado [SUL] [28,47 | 16,00 | 1049,71 | 982,20] para os usuários.
+[2025-07-26T21:19:24.256612300] Centro de dados distribuiu o dado [OESTE] [9,27 | 56,00 | 1025,78 | 139,91] para os usuários.
+[2025-07-26T21:19:24.628236900] Centro de dados distribuiu o dado [LESTE] [22,24 | 40,89 | 1047,15 | 599,47] para os usuários.
+[2025-07-26T21:19:25.452226400] Centro de dados distribuiu o dado [NORTE] [-6,23 | 79,09 | 1017,58 | 543,09] para os usuários.
+[2025-07-26T21:19:25.995044100] Centro de dados distribuiu o dado [LESTE] [30,62 | 79,56 | 960,00 | 339,80] para os usuários.
+[2025-07-26T21:19:26.591747100] Centro de dados distribuiu o dado [OESTE] [24,92 | 65,59 | 968,24 | 251,63] para os usuários.
+[2025-07-26T21:19:27.454863400] Centro de dados distribuiu o dado [SUL] [21,00 | 31,90 | 989,21 | 323,46] para os usuários.
+[2025-07-26T21:21:46.562754800] Centro de Dados se inscreveu no tópico MQTT [dados_climaticos] para recebimento de dados.
+[2025-07-26T21:21:47.265348400] Centro de dados se inscreveu nos tópicos [dados_processados] para publicação de dados.
+[2025-07-26T21:21:47.430351700] Centro conectou-se ao RabbitMQ.
+[2025-07-26T21:23:55.687068300] Centro de dados distribuiu o dado [LESTE] [26,87 | 34,89 | 984,41 | 157,98] para os usuários.
+[2025-07-26T21:23:56.248876300] Centro de dados distribuiu o dado [NORTE] [36,45 | 72,66 | 956,57 | 996,11] para os usuários.
+[2025-07-26T21:23:56.682456] Centro de dados distribuiu o dado [OESTE] [21,80 | 60,14 | 1025,21 | 537,25] para os usuários.
+[2025-07-26T21:23:57.053637200] Centro de dados distribuiu o dado [SUL] [27,78 | 30,36 | 1040,89 | 530,88] para os usuários.
+[2025-07-26T21:23:57.902272] Centro de dados distribuiu o dado [NORTE] [33,99 | 95,67 | 1008,55 | 459,41] para os usuários.
+[2025-07-26T21:23:59.865036500] Centro de dados distribuiu o dado [SUL] [11,78 | 95,65 | 965,86 | 745,65] para os usuários.
+[2025-07-26T21:24:00.225476400] Centro de dados distribuiu o dado [OESTE] [17,57 | 85,94 | 974,05 | 402,22] para os usuários.
+[2025-07-26T21:24:00.802660800] Centro de dados distribuiu o dado [NORTE] [4,30 | 46,66 | 963,96 | 882,56] para os usuários.
+[2025-07-26T21:24:01.477633200] Centro de dados distribuiu o dado [LESTE] [-4,21 | 50,46 | 950,56 | 228,93] para os usuários.
+[2025-07-26T21:24:04.044996800] Centro de dados distribuiu o dado [LESTE] [31,27 | 60,57 | 993,71 | 745,38] para os usuários.
+[2025-07-26T21:24:05.058167] Centro de dados distribuiu o dado [SUL] [32,32 | 13,54 | 1045,10 | 268,00] para os usuários.
+[2025-07-26T21:24:05.610604700] Centro de dados distribuiu o dado [OESTE] [-6,95 | 16,25 | 984,03 | 565,56] para os usuários.
+[2025-07-26T21:24:05.975165600] Centro de dados distribuiu o dado [NORTE] [-2,43 | 70,04 | 950,59 | 412,34] para os usuários.
+[2025-07-26T21:24:06.638978100] Centro de dados distribuiu o dado [LESTE] [29,07 | 30,21 | 959,42 | 753,23] para os usuários.
+[2025-07-26T21:24:07.249352800] Centro de dados distribuiu o dado [SUL] [39,88 | 16,91 | 966,48 | 266,10] para os usuários.
+[2025-07-26T21:24:07.878943200] Centro de dados distribuiu o dado [OESTE] [34,29 | 79,74 | 1005,00 | 555,39] para os usuários.
+[2025-07-26T21:24:09.430119300] Centro de dados distribuiu o dado [LESTE] [30,54 | 29,34 | 976,07 | 591,25] para os usuários.
+[2025-07-26T21:24:09.983407900] Centro de dados distribuiu o dado [SUL] [-0,67 | 54,94 | 952,72 | 578,09] para os usuários.
+[2025-07-26T21:24:10.362655200] Centro de dados distribuiu o dado [OESTE] [-1,90 | 65,10 | 1006,27 | 469,65] para os usuários.
+[2025-07-26T21:24:10.746220200] Centro de dados distribuiu o dado [NORTE] [16,67 | 76,24 | 956,54 | 819,19] para os usuários.
+[2025-07-26T21:24:11.635377600] Centro de dados distribuiu o dado [SUL] [15,88 | 39,20 | 1003,54 | 191,35] para os usuários.
+[2025-07-26T21:24:13.618266] Centro de dados distribuiu o dado [LESTE] [30,31 | 30,57 | 966,22 | 559,68] para os usuários.
+[2025-07-26T21:24:14.209166700] Centro de dados distribuiu o dado [SUL] [13,77 | 20,54 | 994,52 | 883,24] para os usuários.
+[2025-07-26T21:24:14.765320100] Centro de dados distribuiu o dado [OESTE] [-6,78 | 43,00 | 1012,38 | 667,05] para os usuários.
+[2025-07-26T21:24:15.130062600] Centro de dados distribuiu o dado [NORTE] [16,12 | 48,93 | 965,33 | 192,92] para os usuários.

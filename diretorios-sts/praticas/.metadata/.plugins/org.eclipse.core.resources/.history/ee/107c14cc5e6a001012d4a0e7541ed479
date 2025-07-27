@@ -1,0 +1,22 @@
+package com.ufersa.amqpservice;
+
+import java.util.HashMap;
+import java.util.Map;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/amqpservice")
+public class AMQPController {
+
+    @GetMapping("/broker")
+    public Map<String, String> obterBrokerRabbitMQ() {
+        Map<String, String> response = new HashMap<>();
+        response.put("host", "localhost"); 
+        response.put("port", "5672");
+        return response;
+    }
+}
+

@@ -1,0 +1,50 @@
+package com.ufersa.mqttservice.services;
+
+import org.eclipse.paho.client.mqttv3.MqttClient;
+import org.eclipse.paho.client.mqttv3.MqttConnectOptions;
+import org.eclipse.paho.client.mqttv3.MqttException;
+import org.eclipse.paho.client.mqttv3.MqttMessage;
+import org.springframework.stereotype.Service;
+
+import jakarta.annotation.PostConstruct;
+
+@Service
+public class MQTTService {
+
+    private static final String BROKER_URL = "tcp://broker.hivemq.com:1883";
+    private MqttClient client;
+
+    @PostConstruct
+    public void init() {
+        try {
+            client = new MqttClient(BROKER_URL, MqttClient.generateClientId());
+            MqttConnectOptions options = new MqttConnectOptions();
+            options.setAutomaticReconnect(true);
+            options.setCleanSession(true);
+
+            client.connect(options);
+            System.out.println("Produtor MQTT conectado ao broker.");
+        } catch (MqttException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void publicar(String topico, String mensagem) {
+        try {
+            if (client == null || !client.isConnected()) {
+                System.err.println("Cliente MQTT não está conectado.");
+                return;
+            }
+
+            MqttMessage mqttMessage = new MqttMessage(mensagem.getBytes());
+            mqttMessage.setQos(1); // nível de QoS 1: entrega garantida pelo menos uma vez
+
+            client.publish(topico, mqttMessage);
+            System.out.println("Mensagem publicada no tópico [" + topico + "]: " + mensagem);
+
+        } catch (MqttException e) {
+            e.printStackTrace();
+        }
+    }
+}
+

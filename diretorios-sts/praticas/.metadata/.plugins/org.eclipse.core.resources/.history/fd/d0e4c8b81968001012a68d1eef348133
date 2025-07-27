@@ -1,0 +1,39 @@
+package com.ufersa.apigateway.ui;
+
+import java.util.Map;
+
+public class DashboardResponse {
+
+    private int totalDados;
+    private Map<String, Integer> totalTemperatura;
+    private Map<String, Integer> totalUmidade;
+    private Map<String, Integer> totalPressao;
+    private Map<String, Integer> totalRadiacao;
+
+    private Map<String, Double> mediasTemperatura;
+    private Map<String, Double> mediasUmidade;
+    private Map<String, Double> mediasPressao;
+    private Map<String, Double> mediasRadiacao;
+
+    public DashboardResponse(int totalDados,
+                             Map<String, Integer> totalTemperatura,
+                             Map<String, Integer> totalUmidade,
+                             Map<String, Integer> totalPressao,
+                             Map<String, Integer> totalRadiacao,
+                             Map<String, Double> mediasTemperatura,
+                             Map<String, Double> mediasUmidade,
+                             Map<String, Double> mediasPressao,
+                             Map<String, Double> mediasRadiacao) {
+        this.totalDados = totalDados;
+        this.totalTemperatura = totalTemperatura;
+        this.totalUmidade = totalUmidade;
+        this.totalPressao = totalPressao;
+        this.totalRadiacao = totalRadiacao;
+        this.mediasTemperatura = mediasTemperatura;
+        this.mediasUmidade = mediasUmidade;
+        this.mediasPressao = mediasPressao;
+        this.mediasRadiacao = mediasRadiacao;
+    }
+
+}
+

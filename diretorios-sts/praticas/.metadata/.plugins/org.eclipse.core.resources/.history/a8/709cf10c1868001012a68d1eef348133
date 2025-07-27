@@ -1,0 +1,5 @@
+package com.ufersa.apigateway.ui;
+
+public class DashboardController {
+
+}

@@ -1,0 +1,183 @@
+package ampqclient.application;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.PrintWriter;
+import java.net.HttpURLConnection;
+import java.net.URI;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
+
+import org.json.JSONObject;
+
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.DeliverCallback;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.URI;
+import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.util.Scanner;
+
+import org.json.JSONObject;
+
+import com.rabbitmq.client.Channel;
+import com.rabbitmq.client.ConnectionFactory;
+import com.rabbitmq.client.DeliverCallback;
+
+public class AMQPClient {
+
+    public static void main(String[] args) throws Exception {
+        Scanner scanner = new Scanner(System.in);
+
+        // Passo 1: Descobrir endereço do amqpservice via API Gateway
+        URI uri = new URI("http://localhost:8080/gateway/rabbitmq");
+        URL url = uri.toURL();
+        HttpURLConnection connGateway = (HttpURLConnection) url.openConnection();
+        connGateway.setRequestMethod("GET");
+
+        if (connGateway.getResponseCode() != 200) {
+            System.out.println("Não foi possível localizar o serviço RabbitMQ.");
+            scanner.close();
+            return;
+        }
+
+        InputStream inputGateway = connGateway.getInputStream();
+        BufferedReader readerGateway = new BufferedReader(new InputStreamReader(inputGateway, StandardCharsets.UTF_8));
+        StringBuilder respostaGateway = new StringBuilder();
+        String linha;
+        while ((linha = readerGateway.readLine()) != null) {
+            respostaGateway.append(linha);
+        }
+        readerGateway.close();
+
+        JSONObject jsonGateway = new JSONObject(respostaGateway.toString());
+        String amqpServiceHost = jsonGateway.getString("host");
+        int amqpServicePort = jsonGateway.getInt("port");
+
+        // Passo 2: Consultar o amqpservice para obter o broker real
+        String brokerURL = "http://" + amqpServiceHost + ":" + amqpServicePort + "/amqpservice/broker";
+        HttpURLConnection connBroker = (HttpURLConnection) new URL(brokerURL).openConnection();
+        connBroker.setRequestMethod("GET");
+
+        if (connBroker.getResponseCode() != 200) {
+            System.out.println("Não foi possível obter o endereço do broker RabbitMQ.");
+            scanner.close();
+            return;
+        }
+
+        InputStream inputBroker = connBroker.getInputStream();
+        BufferedReader readerBroker = new BufferedReader(new InputStreamReader(inputBroker, StandardCharsets.UTF_8));
+        StringBuilder respostaBroker = new StringBuilder();
+        while ((linha = readerBroker.readLine()) != null) {
+            respostaBroker.append(linha);
+        }
+        readerBroker.close();
+
+        JSONObject jsonBroker = new JSONObject(respostaBroker.toString());
+        String brokerHost = jsonBroker.getString("host");
+        int brokerPort = jsonBroker.getInt("port");
+
+        System.out.println("Broker RabbitMQ localizado em: " + brokerHost + ":" + brokerPort);
+
+        // Escolha de modo
+        System.out.println("Escolha uma opção:");
+        System.out.println("1 - Ver dados em tempo real");
+        System.out.println("2 - Consultar histórico salvo no amqpservice");
+        System.out.print("Opção: ");
+        int escolha = scanner.nextInt();
+        scanner.nextLine();
+
+        if (escolha == 1) {
+            iniciarModoTempoReal(scanner, brokerHost, brokerPort);
+        } else if (escolha == 2) {
+            try {
+                String historicoURL = "http://" + amqpServiceHost + ":" + amqpServicePort + "/amqpservice/historico";
+                HttpURLConnection connHistorico = (HttpURLConnection) new URL(historicoURL).openConnection();
+                connHistorico.setRequestMethod("GET");
+
+                if (connHistorico.getResponseCode() != 200) {
+                    System.out.println("Erro ao buscar histórico do serviço.");
+                } else {
+                    InputStream inputHistorico = connHistorico.getInputStream();
+                    BufferedReader readerHistorico = new BufferedReader(
+                            new InputStreamReader(inputHistorico, StandardCharsets.UTF_8));
+                    StringBuilder historico = new StringBuilder();
+                    String linhaHist;
+                    while ((linhaHist = readerHistorico.readLine()) != null) {
+                        historico.append(linhaHist).append("\n");
+                    }
+                    readerHistorico.close();
+                    System.out.println("=== Histórico Recebido do Serviço ===\n" + historico);
+                }
+            } catch (IOException e) {
+                System.out.println("Erro na requisição HTTP: " + e.getMessage());
+            }
+        } else {
+            System.out.println("Opção inválida.");
+        }
+
+        scanner.close();
+    }
+
+    private static void iniciarModoTempoReal(Scanner scanner, String host, int port) throws Exception {
+        ConnectionFactory factory = new ConnectionFactory();
+        factory.setHost(host);
+        factory.setPort(port);
+
+        System.out.println("Escolha a fila para receber dados:");
+        System.out.println("1 - dados_processados_todos");
+        System.out.println("2 - dados_processados_norte");
+        System.out.println("3 - dados_processados_sul");
+        System.out.println("4 - dados_processados_leste");
+        System.out.println("5 - dados_processados_oeste");
+        System.out.print("Opção: ");
+        int opcao = scanner.nextInt();
+        scanner.nextLine();
+
+        String queueName;
+        switch (opcao) {
+            case 2:
+                queueName = "dados_processados_norte";
+                break;
+            case 3:
+                queueName = "dados_processados_sul";
+                break;
+            case 4:
+                queueName = "dados_processados_leste";
+                break;
+            case 5:
+                queueName = "dados_processados_oeste";
+                break;
+            default:
+                queueName = "dados_processados_todos";
+                break;
+        }
+
+        com.rabbitmq.client.Connection connection = factory.newConnection();
+        Channel channel = connection.createChannel();
+
+        System.out.println("Aguardando mensagens da fila: " + queueName);
+
+        DeliverCallback deliverCallback = (consumerTag, delivery) -> {
+            String dado = new String(delivery.getBody(), StandardCharsets.UTF_8);
+            System.out.println("Recebido: " + dado);
+            // Não mais salva localmente!
+        };
+
+        channel.basicConsume(queueName, true, deliverCallback, consumerTag -> {
+        });
+    }
+}
+

@@ -1,0 +1,5 @@
+package com.ufersa.amqpservice;
+
+public class AMQPController {
+
+}

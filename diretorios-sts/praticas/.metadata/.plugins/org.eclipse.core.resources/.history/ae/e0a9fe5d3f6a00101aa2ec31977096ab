@@ -1,0 +1,5 @@
+package com.ufersa.mqttservice.controllers;
+
+public class MQTTController {
+
+}

@@ -1,0 +1,43 @@
+package br.gov.upanema.academicpass.components.alunos.application.mappers.horario;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import br.gov.upanema.academicpass.components.alunos.domain.models.Horario;
+import br.gov.upanema.academicpass.components.alunos.web.dtos.horario.BuscarHorarioDto;
+import br.gov.upanema.academicpass.components.alunos.web.dtos.horario.SalvarHorarioDto;
+import br.gov.upanema.academicpass.components.alunos.web.mappers.turno.TurnoMapper;
+
+public class HorarioMapper {
+
+	public static Horario salvarHorarioDtoToHorario(SalvarHorarioDto dto) {
+		Horario horario = new Horario();
+		horario.setDiaDaSemana(dto.getDiaDaSemana());
+		horario.setTurnos(TurnoMapper.salvarTurnoDtoListToTurno(dto.getTurnosDto()));
+		return horario;
+	}
+
+	public static BuscarHorarioDto horarioToBuscarHorarioDto(Horario horario) {
+		BuscarHorarioDto dto = new BuscarHorarioDto();
+		dto.setId(horario.getId());
+		dto.setDiaDaSemana(horario.getDiaDaSemana());
+		dto.setTurnosDto(TurnoMapper.turnoListToBuscarTurnoDto(horario.getTurnos()));
+		return dto;
+	}
+
+	public static List<BuscarHorarioDto> horarioListToBuscarHorarioDto(List<Horario> horarios) {
+		List<BuscarHorarioDto> dtos = new ArrayList<>();
+		for (Horario horario : horarios) {
+			dtos.add(horarioToBuscarHorarioDto(horario));
+		}
+		return dtos;
+	}
+	
+	public static List<Horario> salvarHorarioDtoListToHorario(List<SalvarHorarioDto> dtos) {
+		List<Horario> horarios = new ArrayList<>();
+		for (SalvarHorarioDto dto : dtos) {
+			horarios.add(salvarHorarioDtoToHorario(dto));
+		}
+		return horarios;
+	}
+}
