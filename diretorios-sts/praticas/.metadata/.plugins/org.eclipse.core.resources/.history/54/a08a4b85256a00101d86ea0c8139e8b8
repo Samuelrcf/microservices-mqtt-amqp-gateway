@@ -1,7 +1,0 @@
-spring:
-  application:
-    name: servico-mqtt
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/

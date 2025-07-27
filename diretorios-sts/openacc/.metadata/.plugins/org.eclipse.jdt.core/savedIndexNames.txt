@@ -1,4 +1,0 @@
-INDEX VERSION 1.134+C:\Github\diretorios-sts\openacc\.metadata\.plugins\org.eclipse.jdt.core
-879441662.index
-775082517.index
-1865797976.index

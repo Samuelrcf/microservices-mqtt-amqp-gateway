@@ -1,5 +1,0 @@
-package com.ufersa.apigateway.controllers;
-
-public class GatewayController {
-
-}

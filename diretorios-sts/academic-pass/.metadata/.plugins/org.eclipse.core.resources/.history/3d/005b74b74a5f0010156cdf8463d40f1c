@@ -1,5 +1,0 @@
-package br.gov.upanema.academicpass.components.alunos.application.usecases;
-
-public interface CreateAlunoUseCase {
-
-}

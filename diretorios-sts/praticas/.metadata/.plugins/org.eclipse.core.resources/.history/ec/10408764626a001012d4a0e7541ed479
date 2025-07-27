@@ -1,5 +1,0 @@
-package com.ufersa.mqttservice.services;
-
-public class MQTTService {
-
-}

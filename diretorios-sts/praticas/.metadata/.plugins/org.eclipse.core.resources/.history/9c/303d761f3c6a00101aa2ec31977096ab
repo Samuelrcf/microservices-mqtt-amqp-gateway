@@ -1,5 +1,0 @@
-package ampqclient.application;
-
-public class AMQPClient {
-
-}
